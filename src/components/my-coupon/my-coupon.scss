@@ -1,0 +1,57 @@
+@use "../../styles/" as *;
+
+.wrap-my-coupon {
+  margin: 1rem;
+  background: white;
+  border-radius: 4px;
+  padding: 1.5rem;
+  background-image: url(../../images/coupon-bg.png);
+  box-shadow: $box-shadow;
+}
+
+.coupon {
+  &__text {
+    font-size: 0.9rem;
+  }
+  &__coin-balance {
+    font-size: 3rem;
+    color: $title-color;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  &__progress-bar {
+    width: 100%;
+    height: 5px;
+    background: #e2e2ea;
+    margin-bottom: 2rem;
+    border-radius: 2.5px;
+  }
+  &__progress-bar-current {
+    width: 60%;
+    height: 5px;
+    background: $main-color;
+    border-radius: 2.5px;
+  }
+  &__condition {
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.benefit-link {
+  color: $main-color;
+  margin-bottom: 1.5rem;
+  span {
+    margin-right: 0.5rem;
+  }
+}
+
+.btn-coupon {
+  color: white;
+  background: $header-bg;
+  height: 60px;
+  @include flex(center, center);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}

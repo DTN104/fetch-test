@@ -1,9 +1,10 @@
 import React from "react";
+import SilverTier from "../silver-tier/SilverTier";
 
 const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
+      <SilverTier />
     </div>
   );
 };
