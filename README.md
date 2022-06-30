@@ -8,8 +8,23 @@ Database was created by [json-server](https://www.npmjs.com/package/json-server)
 
 ### `npm i json-server`
 
+## Deployment
 
+- First install json server
 
-### `npm run build` fails to minify
+- Then run the project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Libraries used in project
+
+`Swiper`
+
+`Axios`
+
+`Json server`
+
+`React Router Dom`
+
+`Sass`
+
+`Fontawesome`
+
