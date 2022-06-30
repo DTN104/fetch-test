@@ -1,0 +1,55 @@
+{
+  "categories": [
+    {
+      "name": "Petrol",
+      "benefits": [
+        {
+          "img": "petrol1.png",
+          "require": 15,
+          "description": "50% discount for every $100 top-up on your Shell Petrol Card",
+          "limited": 0
+        },
+        {
+          "img": "petrol2.png",
+          "require": 1000,
+          "description": "70% discount top-up on your Shell Petrol Card",
+          "limited": 1
+        }
+      ]
+    },
+    {
+      "name": "Rental Rebate",
+      "benefits": [
+        {
+          "img": "rental1.png",
+          "require": 20,
+          "description": "Get $20 Rental rebate",
+          "limited": 0
+        },
+        {
+          "img": "rental2.png",
+          "require": 15,
+          "description": "Get $500 Rental rebate",
+          "limited": 0
+        }
+      ]
+    },
+    {
+      "name": "Food and Beverage",
+      "benefits": [
+        {
+          "img": "food1.png",
+          "require": 25,
+          "description": "NTUC Fairprice $50 Voucher",
+          "limited": 0
+        },
+        {
+          "img": "food2.png",
+          "require": 5,
+          "description": "Free Cold Stone Sundae at any flavour!",
+          "limited": 0
+        }
+      ]
+    }
+  ]
+}

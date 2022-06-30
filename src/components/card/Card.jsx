@@ -1,10 +1,13 @@
 import React from "react";
 import "./card.scss";
 
-const Card = () => {
+const Card = (props) => {
+  const imgSrc = require(`../../images/${props.img}`);
   return (
     <div>
-      <h1>card</h1>
+      <img src={imgSrc} />
+      <div>{props.require} Coins</div>
+      <div>{props.description}</div>
     </div>
   );
 };
