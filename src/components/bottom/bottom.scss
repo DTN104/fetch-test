@@ -1,0 +1,34 @@
+@use "../../styles/" as *;
+
+.wrap-bottom {
+  width: 100vw;
+  height: 96px;
+  padding: 2rem;
+  border-top: solid 2px $border-color;
+  @include flex(center, space-between);
+  .wrap-bottom-icon .active-icon {
+    width: 12px;
+    height: 12px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+  }
+  .wrap-bottom-icon:nth-child(2) .active-icon {
+    right: 5px;
+  }
+  .wrap-bottom-icon:nth-child(3) .active-icon {
+    right: 0;
+  }
+  .wrap-bottom-icon:nth-child(4) .active-icon {
+    right: 7px;
+  }
+}
+
+.wrap-bottom-icon {
+  position: relative;
+}
+
+.deactive {
+  display: none;
+}
