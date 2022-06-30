@@ -11,8 +11,8 @@ const Top = () => {
     <>
       <div className="bgTop" />
       <div className="wrap-top">
-        <div className="wrap-top__icon">
-          <FontAwesomeIcon icon={faAngleLeft} onClick={() => navigate(-1)} />
+        <div className="wrap-top__icon" onClick={() => navigate(-1)}>
+          <FontAwesomeIcon icon={faAngleLeft} />
         </div>
         <h1 className="wrap-top__main-title">Silver Tier</h1>
         <div className="wrap-top__description">

@@ -1,8 +1,10 @@
 @use "../../styles/" as *;
 
 .wrap-top {
+  margin-top: 1rem;
   padding: 1.5rem;
   &__icon {
+    display: block;
     border-radius: 50%;
     background-color: white;
     width: 40px;
@@ -10,6 +12,7 @@
     @include flex(center, center);
     color: $header-bg;
     margin-bottom: 1rem;
+    cursor: pointer;
   }
   &__main-title {
     margin-bottom: 0.5rem;

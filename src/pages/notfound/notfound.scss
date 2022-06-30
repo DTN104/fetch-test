@@ -1,0 +1,18 @@
+@use "../../styles/" as *;
+
+.notfound-wrap {
+  @include flex(center, center);
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  h1 {
+    color: $title-color;
+  }
+  h2 {
+    color: $main-color;
+    text-align: center;
+  }
+  span {
+    margin-left: 0.5rem;
+  }
+}

@@ -1,0 +1,41 @@
+@use "../../styles/" as *;
+
+.wrap-tier {
+  background: $header-bg;
+  width: 100vw;
+  height: 100vh;
+  color: $main-color;
+  h1 {
+    color: $title-color;
+    text-align: center;
+    background: white;
+    padding: 0.8rem;
+  }
+  div {
+    @include flex(center, left);
+    width: 15rem;
+    height: 7rem;
+    margin: 2rem auto;
+    margin-top: 2rem;
+    margin-top: 0;
+    font-size: 2rem;
+    border-radius: 10px;
+    border-bottom: dashed 1px aliceblue;
+  }
+  img {
+    width: 6rem;
+  }
+  span {
+    color: white;
+    border-bottom: solid 1px white;
+    &:hover {
+      color: yellow;
+      border-color: yellow;
+    }
+  }
+  .license {
+    color: $txt-color;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}
