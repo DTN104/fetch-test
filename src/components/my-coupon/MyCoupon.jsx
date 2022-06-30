@@ -3,6 +3,7 @@ import "./my-coupon.scss";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { CoinContext } from "../../pages/silver-tier/SilverTier";
 
 const MyCoupon = () => {
   const myCoin = useContext(CoinContext);
@@ -10,7 +11,7 @@ const MyCoupon = () => {
     <div className="wrap-my-coupon">
       <div className="coupon">
         <div className="coupon__text">Available Coin balance</div>
-        <div className="coupon__coin-balance">340</div>
+        <div className="coupon__coin-balance">{myCoin}</div>
         <div className="coupon__progress-bar">
           <div className="coupon__progress-bar-current" />
         </div>

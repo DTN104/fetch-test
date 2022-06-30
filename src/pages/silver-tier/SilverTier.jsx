@@ -3,9 +3,8 @@ import "./silver-tier.scss";
 import Top from "../../components/top/Top";
 import Block from "../../components/block/Block";
 import axios from "axios";
-
+export const CoinContext = createContext();
 const SilverTier = () => {
-  const CoinContext = createContext();
   const myCoin = 340;
   const [blocks, setBlocks] = useState([]);
   useEffect(() => {
@@ -16,14 +15,9 @@ const SilverTier = () => {
   return (
     <CoinContext.Provider value={myCoin}>
       <div className="container">
-        <Top coin={myCoin} />
+        <Top />
         {blocks.map((block, index) => (
-          <Block
-            coin={myCoin}
-            blockName={block.name}
-            key={index}
-            cards={block.benefits}
-          />
+          <Block blockName={block.name} key={index} cards={block.benefits} />
         ))}
       </div>
     </CoinContext.Provider>
