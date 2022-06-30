@@ -1,0 +1,45 @@
+@use "../../styles/" as *;
+
+.card-wrap {
+  width: 200px;
+  min-height: 240px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: $box-shadow;
+  border: solid 1px $border-color;
+  margin-right: 1.5rem;
+  &__img {
+  }
+  &__coin {
+    margin: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: $main-color;
+  }
+  &__description {
+    margin: 0 1rem;
+    line-height: 1.5rem;
+  }
+  &__err {
+    color: $main-color;
+    margin: 0.5rem 1rem 1rem 1rem;
+  }
+}
+
+.limited-icon {
+  background: #999;
+  box-shadow: $box-shadow;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  @include flex(center, center);
+  color: white;
+  font-size: 0.9rem;
+  padding: 0.1rem;
+  float: left;
+  margin-right: 0.3rem;
+}
+
+.limited {
+  color: $limited-color;
+}

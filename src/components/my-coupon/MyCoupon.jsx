@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./my-coupon.scss";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const MyCoupon = () => {
+  const myCoin = useContext(CoinContext);
   return (
     <div className="wrap-my-coupon">
       <div className="coupon">
